@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Restaurante Sabores del Alto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="login-body">
+    <main class="login-container">
+        <div class="logo-login">
+            <img src="img/logo.png" alt="Logo Sabores del Alto" class="img-logo-login">
+        </div>
+        <h2>Restaurante Sabores</h2>
+        <p class="subtitulo">Acceso al Sistema Administrativo</p>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="usuario">Usuario o Correo</label>
+                <input type="text" id="usuario" placeholder="admin">
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="1234">
+            </div>
+            <p id="mensajeError" class="error"></p>
+            <button type="submit">Ingresar al Sistema</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

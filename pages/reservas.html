@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Restaurante Sabores</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="marca-header">
+            <img src="../img/logo.png" alt="Logo Sabores del Alto" class="img-logo-header">
+            <h1>Restaurante "Sabores del Alto"</h1>
+        </div>
+        <button type="button" id="btnSalir">Cerrar Sesión</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="menu.html">Menú y Pedidos</a></li>
+            <li><a href="reservas.html" class="activo">Reservas de Mesas</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-principal">
+        <main>
+            <section>
+                <h2>Registrar Nueva Reserva</h2>
+                <form id="formReserva" class="formulario-caja">
+                    <div class="input-group">
+                        <label for="cliente">Nombre del Cliente</label>
+                        <input type="text" id="cliente" required placeholder="Ej. Carlos Mamani">
+                    </div>
+                    <div class="input-group">
+                        <label for="personas">Cantidad de Personas</label>
+                        <input type="number" id="personas" min="1" max="15" required placeholder="4">
+                    </div>
+                    <div class="input-group">
+                        <label for="hora">Hora de Reserva</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                    <button type="submit">Guardar Reserva</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Reservas Registradas</h3>
+            <ul id="listaReservas">
+                <li><strong>Juan Pérez</strong> - 4 pers. (13:00)</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Instituto Tecnológico Bolivia Mar | Sistemas Informáticos</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

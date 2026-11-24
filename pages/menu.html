@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante Sabores</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="marca-header">
+            <img src="../img/logo.png" alt="Logo Sabores del Alto" class="img-logo-header">
+            <h1>Restaurante "Sabores del Alto"</h1>
+        </div>
+        <button type="button" id="btnSalir">Cerrar Sesión</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="menu.html" class="activo">Menú y Pedidos</a></li>
+            <li><a href="reservas.html">Reservas de Mesas</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-principal">
+        <main>
+            <section>
+                <h2>Carta de Platos Disponibles</h2>
+                <div class="tarjetas">
+                    <article class="card">
+                        <img src="../img/chicharron.jpg" alt="Plato de Chicharrón" class="foto-plato">
+                        <h3>Chicharrón</h3>
+                        <p>Con mote, chuño y llajua.</p>
+                        <p class="precio">Bs. 45.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Chicharrón" data-precio="45">+ Agregar</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="../img/silpancho.jpg" alt="Plato de Silpancho" class="foto-plato">
+                        <h3>Silpancho</h3>
+                        <p>Arroz, papa, carne apanada y huevo.</p>
+                        <p class="precio">Bs. 35.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Silpancho" data-precio="35">+ Agregar</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="../img/fricase.jpg" alt="Plato de Fricasé" class="foto-plato">
+                        <h3>Fricasé</h3>
+                        <p>Carne de cerdo en ají amarillo y chuño.</p>
+                        <p class="precio">Bs. 40.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Fricasé" data-precio="40">+ Agregar</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="../img/pique.jpg" alt="Plato de Pique Macho" class="foto-plato">
+                        <h3>Pique Macho</h3>
+                        <p>Carne picada, salchicha, papa frita y locoto.</p>
+                        <p class="precio">Bs. 50.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Pique Macho" data-precio="50">+ Agregar</button>
+                    </article>
+
+                       <!-- 5 -->
+                    <article class="card">
+                       <img src="../img/sajta.jpg" alt="Plato de Sajta de Pollo" class="foto-plato">
+                       <h3>Sajta de Pollo</h3>
+                       <p>Presa de pollo en ají amarillo, tunta y sarza.</p>
+                       <p class="precio">Bs. 30.00</p>
+                       <button type="button" class="btn-agregar" data-plato="Sajta de Pollo" data-precio="30">+ Agregar</button>
+                    </article>
+
+                    <!-- 6 -->
+                     <article class="card">
+                        <img src="../img/milanesa.jpg" alt="Milanesa de Pollo" class="foto-plato">
+                        <h3>Milanesa de Pollo</h3>
+                        <p>Pechuga empanizada con arroz, papas fritas y ensalada.</p>
+                        <p class="precio">Bs. 32.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Milanesa de Pollo" data-precio="32">+ Agregar</button>
+                    </article>
+
+                    <!-- 7 -->
+                    <article class="card">
+                        <img src="../img/plato-paceno.jpg" alt="Plato Paceño" class="foto-plato">
+                        <h3>Plato Paceño</h3>
+                        <p>Choclo, haba, papa, queso frito y carne.</p>
+                        <p class="precio">Bs. 38.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Plato Paceño" data-precio="38">+ Agregar</button>
+                    </article>
+
+                    <!-- 8 -->
+                    <article class="card">
+                        <img src="../img/lomo-montado.jpg" alt="Plato de Lomo Montado" class="foto-plato">
+                        <h3>Lomo Montado</h3>
+                        <p>Bife a la plancha con dos huevos, arroz y papas.</p>
+                        <p class="precio">Bs. 40.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Lomo Montado" data-precio="40">+ Agregar</button>
+                    </article>
+
+                    <!-- 9 -->
+                    <article class="card">
+                        <img src="../img/picante-mixto.jpg" alt="Plato de Picante Mixto" class="foto-plato">
+                        <h3>Picante Mixto</h3>
+                        <p>Pollo y lengua en ají colorado con chuño y papa.</p>
+                        <p class="precio">Bs. 48.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Picante Mixto" data-precio="48">+ Agregar</button>
+                    </article>
+
+                    <!-- 10 -->
+                    <article class="card">
+                        <img src="../img/majadito.jpg" alt="Plato de Majadito Batido" class="foto-plato">
+                        <h3>Majadito de Charque</h3>
+                        <p>Arroz tostado con charque, huevo y plátano frito.</p>
+                        <p class="precio">Bs. 32.00</p>
+                        <button type="button" class="btn-agregar" data-plato="Majadito de Charque" data-precio="32">+ Agregar</button>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Pedido Actual</h3>
+            <ul id="listaPedido"></ul>
+            <hr>
+            <p class="total-texto">Total a cobrar: Bs. <span id="totalPedido">0.00</span></p>
+            <button type="button" id="btnCobrar" class="btn-secundario">Cobrar / Limpiar</button>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Instituto Tecnológico Bolivia Mar | Sistemas Informáticos</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
